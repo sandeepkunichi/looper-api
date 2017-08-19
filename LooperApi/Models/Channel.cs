@@ -8,10 +8,10 @@ namespace LooperApi.Models
 {
     public class Channel
     {
-        public int Id { get; set; }
-        public String Name { get; set; }
-        public List<Message> Messages { get; set; } = new List<Models.Message>();
-        public List<User> Users { get; set; } = new List<Models.User>();
+        public int id { get; set; }
+        public String name { get; set; }
+        public List<Message> messages { get; set; } = new List<Models.Message>();
+        public List<User> users { get; set; } = new List<Models.User>();
 
     }
 }

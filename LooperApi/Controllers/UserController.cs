@@ -13,8 +13,8 @@ namespace LooperApi.Controllers
 
         List<User> users = new List<User>(2)
         {
-            new Models.User { Id = 1, Name = "Sourav"},
-            new Models.User { Id = 2, Name = "Varsha"}
+            new Models.User { id = 1, username = "Sourav"},
+            new Models.User { id = 2, username = "Varsha"}
         };
         public IEnumerable<User> GetAllUsers()
         {
@@ -23,7 +23,7 @@ namespace LooperApi.Controllers
 
         public IHttpActionResult GetUser(int id)
         {
-            var user = users.FirstOrDefault((u) => u.Id == id);
+            var user = users.FirstOrDefault((u) => u.id == id);
             if (user == null)
             {
                 return NotFound();

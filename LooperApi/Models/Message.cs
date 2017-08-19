@@ -7,9 +7,10 @@ namespace LooperApi.Models
 {
     public class Message
     {
-        public int Id { get; set; }
-        public int UserId { get; set; }
-        public String Text { get; set; }
-        public int ChannelId { get; set; }
+        public int id { get; set; }
+        public int userId { get; set; }
+        public String text { get; set; }
+        public int channelId { get; set; }
+        public String username { get; set; }
     }
 }

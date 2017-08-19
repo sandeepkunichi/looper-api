@@ -7,8 +7,8 @@ namespace LooperApi.Models
 {
     public class User
     {
-        public int Id { get; set; }
-        public String Name { get; set; }
+        public int id { get; set; }
+        public String username { get; set; }
 
     }
 }
